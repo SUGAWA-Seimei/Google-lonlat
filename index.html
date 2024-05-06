@@ -18,9 +18,9 @@
 
 <input type="text" id="inputFormLonDo" name="inputFormLonDo" size=2>°<input type="text" id="inputFormLonHun" name="inputFormLonHun" size=2>′<input type="text" id="inputFormLonByo" name="inputFormLonByo" size=2><button type="button" onclick="document.getElementById('lon').value = (Number(document.getElementById('inputFormLonDo').value) +Number(document.getElementById('inputFormLonHun').value / 60)+ Number(document.getElementById('inputFormLonByo').value/3600)).toFixed(7);document.getElementById('lat').value = (Number(document.getElementById('inputFormLatDo').value) +Number(document.getElementById('inputFormLatHun').value / 60)+ Number(document.getElementById('inputFormLatByo').value/3600)).toFixed(7);make_address();">度分秒の緯度経度で検索</button>
 
-</td></tr></table>
+</td></tr></table><br><br>
 <input type="checkbox" id="soku" checked="checked"><label for="soku">アドレス作ったら即開く</label>
-<input type="hidden" id="lon"><input type="hidden" id="lat">
+<input type="hidden" id="lon"><input type="hidden" id="lat">　拡大の度合い
 <select id="zoom" name="zoom">
 <option value="9.5">9.5（東京近郊四県くらい）</option>
 <option value="12">12（東京23区全域くらい）</option>
@@ -30,7 +30,7 @@
 </select>
 
 
-</select><br>
+<br><br>
 <a href="#" id="output" target="_blank">adress</a>
 
 <script>
