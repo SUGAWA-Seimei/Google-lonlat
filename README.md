@@ -13,5 +13,7 @@ https://sugawa-seimei.github.io/Google-lonlat/index.html
 
 
 ・空欄は0として扱います。
+
 ・小数点も可能です。
+
 ・南緯/西経はマイナスで表現して下さい。
