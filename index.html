@@ -4,19 +4,16 @@
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width">
 <title>緯度経度を指定してGoogle mapを開く</title>
+
 </head>
 
 <body>
 <p>緯度経度を指定してGoogle mapを開く</p>
 <p>
 <table><tr><td>
-緯度<input type="text" id="inputFormLat" name="inputFormLat" value=" 35.6935811" placeholder="緯度:90.0000"><br>
-経度<input type="text" id="inputFormLon" name="inputFormLon" value="139.7547188"placeholder="経度:180.0000">
-<button type="button" onclick="document.getElementById('lon').value = Number(document.getElementById('inputFormLon').value).toFixed(7);document.getElementById('lat').value = Number(document.getElementById('inputFormLat').value).toFixed(7);make_address();">小数点の緯度経度で検索</button>　</td><td>
 
-<input type="text" id="inputFormLatDo" name="inputFormLatDo" size=2>°<input type="text" id="inputFormLatHun" name="inputFormLatHun" size=2>′<input type="text" id="inputFormLatByo" name="inputFormLatByo" size=2><br>
-
-<input type="text" id="inputFormLonDo" name="inputFormLonDo" size=2>°<input type="text" id="inputFormLonHun" name="inputFormLonHun" size=2>′<input type="text" id="inputFormLonByo" name="inputFormLonByo" size=2><button type="button" onclick="document.getElementById('lon').value = (Number(document.getElementById('inputFormLonDo').value) +Number(document.getElementById('inputFormLonHun').value / 60)+ Number(document.getElementById('inputFormLonByo').value/3600)).toFixed(7);document.getElementById('lat').value = (Number(document.getElementById('inputFormLatDo').value) +Number(document.getElementById('inputFormLatHun').value / 60)+ Number(document.getElementById('inputFormLatByo').value/3600)).toFixed(7);make_address();">度分秒の緯度経度で検索</button>
+緯度<input type="text" id="inputFormLatDo" name="inputFormLatDo" size=12>°<input type="text" id="inputFormLatHun" name="inputFormLatHun" size=2>′<input type="text" id="inputFormLatByo" name="inputFormLatByo" size=2><br>
+経度<input type="text" id="inputFormLonDo" name="inputFormLonDo" size=12>°<input type="text" id="inputFormLonHun" name="inputFormLonHun" size=2>′<input type="text" id="inputFormLonByo" name="inputFormLonByo" size=2><button type="button" onclick="document.getElementById('lon').value = (Number(document.getElementById('inputFormLonDo').value) +Number(document.getElementById('inputFormLonHun').value / 60)+ Number(document.getElementById('inputFormLonByo').value/3600)).toFixed(7);document.getElementById('lat').value = (Number(document.getElementById('inputFormLatDo').value) +Number(document.getElementById('inputFormLatHun').value / 60)+ Number(document.getElementById('inputFormLatByo').value/3600)).toFixed(7);make_address();">度分秒の緯度経度で検索</button>
 
 </td></tr></table><br><br>
 <input type="checkbox" id="soku" checked="checked"><label for="soku">アドレス作ったら即開く</label>
