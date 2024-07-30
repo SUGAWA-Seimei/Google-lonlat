@@ -14,8 +14,8 @@ input{font-size:1.4em;}
 <p>
 <table><tr><td>
 
-緯度<input type="text" id="inputFormLatDo" name="inputFormLatDo" size=12>°<input type="text" id="inputFormLatHun" name="inputFormLatHun" size=2>′<input type="text" id="inputFormLatByo" name="inputFormLatByo" size=2><br>
-経度<input type="text" id="inputFormLonDo" name="inputFormLonDo" size=12>°<input type="text" id="inputFormLonHun" name="inputFormLonHun" size=2>′<input type="text" id="inputFormLonByo" name="inputFormLonByo" size=2><button type="button" onclick="document.getElementById('lon').value = (Number(document.getElementById('inputFormLonDo').value) +Number(document.getElementById('inputFormLonHun').value / 60)+ Number(document.getElementById('inputFormLonByo').value/3600)).toFixed(7);document.getElementById('lat').value = (Number(document.getElementById('inputFormLatDo').value) +Number(document.getElementById('inputFormLatHun').value / 60)+ Number(document.getElementById('inputFormLatByo').value/3600)).toFixed(7);make_address();">度分秒の緯度経度で検索</button>
+緯度<input type="text" id="inputFormLatDo" name="inputFormLatDo" size=12>°<input type="text" id="inputFormLatHun" name="inputFormLatHun" size=2>′<input type="text" id="inputFormLatByo" name="inputFormLatByo" size=2>″<br>
+経度<input type="text" id="inputFormLonDo" name="inputFormLonDo" size=12>°<input type="text" id="inputFormLonHun" name="inputFormLonHun" size=2>′<input type="text" id="inputFormLonByo" name="inputFormLonByo" size=2>″<button type="button" onclick="document.getElementById('lon').value = (Number(document.getElementById('inputFormLonDo').value) +Number(document.getElementById('inputFormLonHun').value / 60)+ Number(document.getElementById('inputFormLonByo').value/3600)).toFixed(7);document.getElementById('lat').value = (Number(document.getElementById('inputFormLatDo').value) +Number(document.getElementById('inputFormLatHun').value / 60)+ Number(document.getElementById('inputFormLatByo').value/3600)).toFixed(7);make_address();">度分秒の緯度経度で検索</button>
 
 </td></tr></table><br><br>
 <input type="checkbox" id="soku" checked="checked"><label for="soku">アドレス作ったら即開く</label>
