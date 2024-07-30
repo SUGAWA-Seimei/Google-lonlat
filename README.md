@@ -1,5 +1,6 @@
 # Google-lonlat
 Googleマップを緯度経度指定でひらきます。
+（アドレスや検索ボックスで緯度経度指定できるけど、入力フォーマットを覚えてられないんだもん…）
 
 https://sugawa-seimei.github.io/Google-lonlat/index.html
 
