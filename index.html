@@ -19,8 +19,8 @@ function make_address(){
 	document.getElementById('lat').value = (Number(document.getElementById('inputFormLatDo').value) +Number(document.getElementById('inputFormLatHun').value / 60)+ Number(document.getElementById('inputFormLatByo').value/3600)).toFixed(7);
 	var lo = document.getElementById('lon').value;
 	var la = document.getElementById('lat').value;
-	output.href = "https://maps.google.com/maps/place/" + lo + "," + la + "/@" + lo + "," + la + ","+ document.getElementById('zoom').value;
-	output.innerText = "https://maps.google.com/maps/place/" + lo + "," + la + "/@" + lo + "," + la + ","+ document.getElementById('zoom').value;
+	output.href = "https://www.google.com/maps/place/" + lo + "," + la + "/@" + lo + "," + la + ","+ document.getElementById('zoom').value;
+	output.innerText = "https://www.google.com/maps/place/" + lo + "," + la + "/@" + lo + "," + la + ","+ document.getElementById('zoom').value;
 	if(soku.checked==true){output.click();}
 };
 
